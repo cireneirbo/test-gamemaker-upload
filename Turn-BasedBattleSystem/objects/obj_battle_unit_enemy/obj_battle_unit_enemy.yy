@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "simple objects",
+    "path": "folders/Objects/simple objects.yy",
   },
   "parentObjectId": {
     "name": "obj_battle_unit",

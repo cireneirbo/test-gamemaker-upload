@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "logic objects",
+    "path": "folders/Objects/logic objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

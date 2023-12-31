@@ -1,6 +1,13 @@
 instance_deactivate_all(true);
 
 units = [];
+turn = 0;
+unit_turn_order = [];
+unit_render_order = [];
+enemy_units = [];
+party_units = [];
+
+
 
 // Make enemies
 for (var _i = 0; _i < array_length(enemies); _i++) {
@@ -17,9 +24,19 @@ for (var _i = 0; _i < array_length(global.party); _i++) {
 }
 
 
+// Shuffle turn order
+unit_turn_order = array_shuffle(units);
 
+// Get render order
+refresh_render_order = function() {
+	unit_render_order = [];
+	array_copy(unit_render_order, 0, units, 0, array_length(units));
+	array_sort(unit_render_order, function(_1, _2) {
+		return _1.y - _2.y;
+	});
+}
 
+show_debug_message(enemy_units);
 
-
-
+refresh_render_order();
 
