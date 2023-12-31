@@ -31,11 +31,13 @@ draw_text(x+COLUMN_NAME, y+(room_height*0.75), "NAME");
 draw_text(x+COLUMN_HP, y+(room_height*0.75), "HP");
 draw_text(x+COLUMN_MP, y+(room_height*0.75), "MP");
 
-// Draw enemy names
+// set draw properties
 draw_set_font(fnt_amiri_quran);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_white);
+
+// draw enemy names
 var _draw_limit = 4; // limit the number of rows for enemies
 var _drawn = 0;
 
